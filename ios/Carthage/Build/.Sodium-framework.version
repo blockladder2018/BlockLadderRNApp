@@ -1,0 +1,9 @@
+{
+  "commitish" : "v1.0.10.1",
+  "iOS" : [
+    {
+      "name" : "Sodium",
+      "hash" : "3299dc19fe9e6a540a9020085c3d2c6e6066df19a1d00cfab558fce2c20eb09c"
+    }
+  ]
+}

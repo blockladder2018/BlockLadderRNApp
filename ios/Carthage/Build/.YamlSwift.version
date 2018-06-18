@@ -1,0 +1,9 @@
+{
+  "commitish" : "3e880fee0e68653f8304392cf0a9b7fc4b376a38",
+  "iOS" : [
+    {
+      "name" : "Yaml",
+      "hash" : "bf7a1f19ee90803c7e5be8959325ff2ef85353edefa71e2713a04ab82ca04cda"
+    }
+  ]
+}
