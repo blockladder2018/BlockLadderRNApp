@@ -28,5 +28,9 @@
     "tvos": "9.2"
   },
   "source_files": "yoga/**/*.{cpp,h}",
-  "public_header_files": "yoga/{Yoga,YGEnums,YGMacros}.h"
+  "public_header_files": [
+    "yoga/Yoga.h",
+    "yoga/YGEnums.h",
+    "yoga/YGMacros.h"
+  ]
 }

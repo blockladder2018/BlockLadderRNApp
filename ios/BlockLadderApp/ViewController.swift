@@ -72,20 +72,5 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func openRNView(_ sender: UIButton) {
-        NSLog("RN View Opened")
-        let jsCodeLocation = URL(string: "./bundle.js")
-        
-        let rootView = RCTRootView(
-            bundleURL: jsCodeLocation,
-            moduleName: "BlockLadderReactNative",
-            initialProperties: nil,
-            launchOptions: nil
-        )
-        let vc = UIViewController()
-        vc.view = rootView
-        self.present(vc, animated: true, completion: nil)
-    }
-    
 }
 

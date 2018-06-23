@@ -3,11 +3,11 @@
   "iOS" : [
     {
       "name" : "CocoaLumberjackSwift",
-      "hash" : "7fd05633c76ca03b2612eb87afa31f8cd2ef35037aeaca6a5bb151ffa495c389"
+      "hash" : "20199f5ef291b50f38fca672ae002292b0cb7d493f430eeb356357774e96c211"
     },
     {
       "name" : "CocoaLumberjack",
-      "hash" : "935e194306ec26424da3b02487b822c4dfbe874d61696c7567ef16429d360ed4"
+      "hash" : "84c3164cffde60ac3f41c944c27a4580f4f764efa4ef3655e897441dbb3746db"
     }
   ]
 }

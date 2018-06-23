@@ -10,6 +10,7 @@
 		0A660F79094F3C0FBA6694AE /* Pods_BlockLadderApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1B1ECAD0021B7ED6BA0030 /* Pods_BlockLadderApp.framework */; };
 		2942B7224A47DDF30E903A78 /* Pods_PacketTunnel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E44A578E74CF3757CE6040C /* Pods_PacketTunnel.framework */; };
 		7586A64F20CF81B400D3681D /* bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 7586A64E20CF81B400D3681D /* bundle.js */; };
+		75F195CE20DC93A300831956 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F195CD20DC93A300831956 /* DiscoverViewController.swift */; };
 		BB7E9AFF20C66C1800EAD16B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7E9AFE20C66C1800EAD16B /* AppDelegate.swift */; };
 		BB7E9B0120C66C1800EAD16B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7E9B0020C66C1800EAD16B /* ViewController.swift */; };
 		BB7E9B0420C66C1800EAD16B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB7E9B0220C66C1800EAD16B /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 /* Begin PBXFileReference section */
 		10499E45BA45ACA1AC878ECC /* Pods-PacketTunnel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PacketTunnel.release.xcconfig"; path = "Pods/Target Support Files/Pods-PacketTunnel/Pods-PacketTunnel.release.xcconfig"; sourceTree = "<group>"; };
 		7586A64E20CF81B400D3681D /* bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = bundle.js; sourceTree = SOURCE_ROOT; };
+		75F195CD20DC93A300831956 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		9E44A578E74CF3757CE6040C /* Pods_PacketTunnel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PacketTunnel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F1B1ECAD0021B7ED6BA0030 /* Pods_BlockLadderApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlockLadderApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52B836D7C5261CCE41D1B6E /* Pods-PacketTunnel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PacketTunnel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PacketTunnel/Pods-PacketTunnel.debug.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				BB7E9B2820C670A200EAD16B /* VpnManager.swift */,
 				BB7E9B2A20C6711E00EAD16B /* Notifications.swift */,
 				BB7E9B4E20C67BE100EAD16B /* NEKitRule.conf */,
+				75F195CD20DC93A300831956 /* DiscoverViewController.swift */,
 			);
 			path = BlockLadderApp;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				BB7E9B0120C66C1800EAD16B /* ViewController.swift in Sources */,
 				BB7E9AFF20C66C1800EAD16B /* AppDelegate.swift in Sources */,
 				BB7E9B2920C670A200EAD16B /* VpnManager.swift in Sources */,
+				75F195CE20DC93A300831956 /* DiscoverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

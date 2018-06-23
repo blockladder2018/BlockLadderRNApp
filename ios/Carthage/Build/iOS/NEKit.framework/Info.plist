@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>FMWK</string>
 	<key>CFBundleShortVersionString</key>
-	<string>96d802f2ffce1b56d54ac4a25eaaa311324b3d0a</string>
+	<string>d115be5236dc908c426bc77bf71261135fad8030</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,7 +25,7 @@
 		<string>iPhoneOS</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>2</string>
+	<string>1</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -39,9 +39,9 @@
 	<key>DTSDKName</key>
 	<string>iphoneos11.4</string>
 	<key>DTXcode</key>
-	<string>0940</string>
+	<string>0941</string>
 	<key>DTXcodeBuild</key>
-	<string>9F1027a</string>
+	<string>9F2000</string>
 	<key>MinimumOSVersion</key>
 	<string>9.3</string>
 	<key>UIDeviceFamily</key>
