@@ -1,15 +1,11 @@
 import { StyleSheet } from 'react-native';
 
 import {
-  ApplicationStyles,
   Colors,
-  Debug,
   Fonts,
 } from 'App/Themes';
 
 export default StyleSheet.create({
-  ...ApplicationStyles.screen,
-
   containerStyle: {
     flexDirection: 'column',
     justifyContent: 'flex-start',
@@ -42,16 +38,17 @@ export default StyleSheet.create({
     backgroundColor: Colors.white,
     padding: 10,
     fontSize: Fonts.size.h3,
+    borderWidth: 1,
   },
 
   inputOnFocusStyle: {
-    ...Debug.debugBorder('red'),
     flexDirection: 'row',
     alignSelf: 'stretch',
     color: Colors.black,
     backgroundColor: Colors.white,
     padding: 10,
     fontSize: Fonts.size.h3,
+    borderWidth: 1,
   },
 
   inputWithValidationStyle: {

@@ -18,6 +18,6 @@ export default StyleSheet.create({
     fontSize: 15,
     fontWeight: 'bold',
     color: Colors.black,
-    martinTop: 10,
+    marginTop: 10,
   },
 });

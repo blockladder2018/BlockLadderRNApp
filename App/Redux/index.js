@@ -4,6 +4,7 @@ import configureStore from './CreateStore';
 const createStore = () => {
   const rootReducer = combineReducers({
     login: require('./Login/LoginRedux').reducer,
+    vpn: require('./Vpn/VpnRedux').reducer,
   });
 
   return configureStore(rootReducer);

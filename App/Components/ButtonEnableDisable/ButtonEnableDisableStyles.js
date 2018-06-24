@@ -14,12 +14,23 @@ export default StyleSheet.create({
     justifyContent: 'center',
     marginBottom: 10,
     backgroundColor: Colors.amber,
+    elevation: 3,
+  },
+
+  containerDisabledStyle: {
+    height: 50,
+    width: Metrics.screenWidth * 0.9,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    marginBottom: 10,
+    backgroundColor: Colors.steel,
+    elevation: 3,
   },
 
   rowStyle: {
+    flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    flexDirection: 'column',
   },
 
   labelStyle: {

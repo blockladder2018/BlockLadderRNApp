@@ -1,18 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Provider } from 'react-redux';
 
 import store from 'App/Redux';
-import LoginScreen from './LoginScreen';
+import Router from './Router';
 
-class RootContainer extends Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <LoginScreen />
-      </Provider>
-    );
-  }
-}
-
+const RootContainer = () => (
+  <Provider store={store}>
+    <Router />
+  </Provider>
+);
 
 export default RootContainer;

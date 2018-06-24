@@ -1,15 +1,12 @@
 import { StyleSheet } from 'react-native';
 
 import {
-  ApplicationStyles,
   Colors,
   Metrics,
   Fonts,
 } from 'App/Themes';
 
 export default StyleSheet.create({
-  ...ApplicationStyles.screen,
-
   containerStyle: {
     height: 55,
     width: Metrics.screenWidth * 0.9,

@@ -7,7 +7,7 @@ import { Actions } from 'react-native-router-flux';
 import { ButtonDark, ButtonEnableDisable, Input } from 'App/Components';
 import LoginRedux from 'App/Redux/Login/LoginRedux';
 
-class LoginScreen extends Component {
+class RegisterScreen extends Component {
 
   render() {
     const {
@@ -22,11 +22,19 @@ class LoginScreen extends Component {
       <View>
 
         <Input
+          label='Country'
+          value={country}
+          onChangeText={(text) => {
+            this.props.setCountry(text);
+          }}
+          onSubmitEditing={() => console.log('submitted')}
+        />
+
+        <Input
           label='Mobile Number'
           value={mobile}
           onChangeText={(text) => {
             this.props.setMobile(text);
-            console.log('mobile number input');
           }}
           onSubmitEditing={() => console.log('submitted')}
         />
@@ -37,24 +45,24 @@ class LoginScreen extends Component {
           secureTextEntry={true}
           onChangeText={(text) => {
             this.props.setPassword(text);
-            console.log('password input');
           }}
           onSubmitEditing={() => console.log('submitted')}
         />
 
         <ButtonEnableDisable
-          disabled={_.isEmpty(mobile) || _.isEmpty(password)}
-          title='Login'
+          disabled={_.isEmpty(country) || _.isEmpty(mobile) || _.isEmpty(password)}
+          title='Finish'
           onPress={() => {
-            console.log('Login button pressed, mobile: ' + mobile + '; password: ' + password);
-            Actions.home();
+            console.log('Register, country: ' + country + ' mobile: ' + mobile + '; password: ' + password);
+            Actions.pop();
           }}
         />
 
         <ButtonDark
-          title='Register'
+          title='Cancel'
           onPress={() => {
-            Actions.register();
+            console.log('Cancel button pressed');
+            Actions.pop();
           }}
         />
 
@@ -70,7 +78,6 @@ const mapStateToProps = ({ login }) => {
     password: login.password,
     invitationCode: login.invitationCode,
     verificationCode: login.verificationCode,
-    accessToken: login.accessToken,
   };
 };
 
@@ -98,13 +105,10 @@ const mapDispatchToProps = (dispatch) => {
     sentSmsVerification: () => {
       return dispatch(LoginRedux.sentSmsVerification());
     },
-    login: () => {
-      return dispatch(LoginRedux.login());
-    },
     confirmSms: () => {
       return dispatch(LoginRedux.confirmSms());
     },
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(LoginScreen);
+export default connect(mapStateToProps, mapDispatchToProps)(RegisterScreen);
