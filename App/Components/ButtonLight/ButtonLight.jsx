@@ -5,22 +5,17 @@ import PropTypes from 'prop-types';
 import Styles from './ButtonLightStyles';
 
 const ButtonLight = ({ title, onPress }) => {
-  const {
-    containerStyle,
-    rowStyle,
-    labelStyle,
-  } = Styles;
+  const { containerStyle, rowStyle, labelStyle } = Styles;
 
   return (
     <TouchableOpacity
       onPress={onPress}
+      style={containerStyle}
     >
-      <View style={containerStyle}>
-        <View style={rowStyle}>
-          <Text style={labelStyle}>
-            {title}
-          </Text>
-        </View>
+      <View style={rowStyle}>
+        <Text style={labelStyle}>
+          {title}
+        </Text>
       </View>
     </TouchableOpacity>
   );

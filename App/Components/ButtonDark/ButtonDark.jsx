@@ -10,7 +10,6 @@ const ButtonDark = ({ onPress, title }) => {
   return (
     <TouchableOpacity
       onPress={onPress}
-      title={title}
       style={containerStyle}
     >
       <View style={rowStyle}>
