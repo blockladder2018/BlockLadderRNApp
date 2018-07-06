@@ -24,14 +24,24 @@ class ConnectScreen extends Component {
     }
 
     return (
-      <View style={{ flex: 1, flexDirection: 'column', alignItems: 'center' }}>
-        <PickerWithLabel
-          label={'Proxy Server'}
-          selectedValue={this.props.selectedProxy}
-          onValueChange={(itemValue, itemIndex) => this.props.selectProxy(itemValue)}
-          data={this.props.proxys}
-          enablePicker={true}
-        />
+      <View style={{ flex: 1, flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start' }}>
+        <View style={{ flex: 1, flexDirection: 'column', marginBottom: 100 }}>
+          <PickerWithLabel
+            label={'Select a proxy server'}
+            selectedValue={this.props.selectedProxy}
+            onValueChange={(itemValue, itemIndex) => this.props.selectProxy(itemValue)}
+            data={this.props.proxys}
+            enablePicker={true}
+          />
+          <ButtonEnableDisable
+            disabled={_.isEmpty(this.props.selectedProxy)}
+            title={this.props.isConnected ? 'Disconnect' : 'Connect'}
+            onPress={() => {
+              this.props.setConnectionStatus(!this.props.isConnected);
+              console.log('Selected proxy server ' + this.props.selectedProxy.id);
+            }}
+          />
+        </View>
         <RootScreenNavigation />
       </View>
     );
@@ -42,6 +52,7 @@ const mapStateToProps = ({ vpn }) => {
   return {
     proxys: vpn.proxys,
     selectedProxy: vpn.selectedProxy,
+    isConnected: vpn.isConnected,
   };
 };
 
@@ -52,7 +63,10 @@ const mapDispatchToProps = (dispatch) => {
     },
     selectProxy: (selectedProxy) => {
       dispatch(VpnRedux.selectProxy(selectedProxy));
-    }
+    },
+    setConnectionStatus: (status) => {
+      dispatch(VpnRedux.setConnectionStatus(status));
+    },
   };
 };
 

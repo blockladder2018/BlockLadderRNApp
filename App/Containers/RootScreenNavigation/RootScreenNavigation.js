@@ -8,6 +8,25 @@ import { Actions } from 'react-native-router-flux';
 import NavigationRedux from 'App/Redux/Navigation/NavigationRedux';
 
 class RootScreenNavigation extends Component {
+
+  componentDidUpdate(prevProps) {
+    if (this.props.activeTab !== prevProps.activeTab) {
+      switch (this.props.activeTab) {
+        case 'connect':
+          Actions.connect();
+          break;
+        case 'account':
+          Actions.account();
+          break;
+        case 'news':
+          Actions.news();
+          break;
+        default:
+          console.log('no active tab');
+      }
+    }
+  }
+
   tabs = [
     {
       key: 'connect',
@@ -33,7 +52,7 @@ class RootScreenNavigation extends Component {
   ];
 
   renderIcon = icon => ({ isActive }) => (
-    <Icon size={24} color="black" name={icon} />
+    <Icon size={ isActive ? 26 : 24 } color={ isActive ? "black" : "grey"} name={icon} />
   )
 
   renderTab = ({ tab, isActive }) => (

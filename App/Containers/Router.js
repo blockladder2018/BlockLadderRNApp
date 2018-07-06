@@ -1,5 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Stack, Scene, Router, Actions } from 'react-native-router-flux';
+
 import LoginScreen from './LoginScreen';
 import RegisterScreen from './RegisterScreen';
 import NewsScreen from './NewsScreen';
@@ -17,9 +19,9 @@ const RouterComponent = () => {
         />
 
         <Scene
-          key="login"
+          key="account"
           component={LoginScreen}
-          title="Login"
+          title="Account"
         />
 
         <Scene

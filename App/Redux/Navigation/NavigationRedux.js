@@ -4,7 +4,7 @@ import _ from 'lodash';
 
 /* ------------- Initial State ------------- */
 export const INITIAL_STATE = Immutable({
-  activeTab: null,
+  activeTab: '',
 });
 
 /* ------------- Types and Action Creators ------------- */

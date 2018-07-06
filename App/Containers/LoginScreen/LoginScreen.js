@@ -6,6 +6,7 @@ import { Actions } from 'react-native-router-flux';
 
 import { ButtonDark, ButtonEnableDisable, Input } from 'App/Components';
 import LoginRedux from 'App/Redux/Login/LoginRedux';
+import RootScreenNavigation from 'App/Containers/RootScreenNavigation';
 
 class LoginScreen extends Component {
 
@@ -19,7 +20,7 @@ class LoginScreen extends Component {
     } = this.props;
 
     return (
-      <View style={{ alignItems: 'center' }}>
+      <View style={{ flex: 1, flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start' }}>
         <Input
           label='Mobile Number'
           value={mobile}
@@ -56,6 +57,7 @@ class LoginScreen extends Component {
             Actions.register();
           }}
         />
+        <RootScreenNavigation />
       </View>
     );
   }
