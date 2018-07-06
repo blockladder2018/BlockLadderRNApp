@@ -16,6 +16,7 @@ class DiscoverViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.launchRNView()
     }
     
     override func didReceiveMemoryWarning() {
@@ -43,8 +44,5 @@ class DiscoverViewController: UIViewController {
         let vc = UIViewController()
         vc.view = rootView
         self.present(vc, animated: true, completion: nil)
-        
-        
-        
     }
 }

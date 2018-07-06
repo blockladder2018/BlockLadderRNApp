@@ -19,8 +19,7 @@ class RegisterScreen extends Component {
     } = this.props;
 
     return (
-      <View>
-
+      <View style={{ alignItems: 'center' }}>
         <Input
           label='Country'
           value={country}

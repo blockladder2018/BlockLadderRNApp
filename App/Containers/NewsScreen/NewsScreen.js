@@ -5,7 +5,7 @@ import { View, Text } from 'react-native';
 
 // import LoginRedux from 'App/Redux/Login/LoginRedux';
 
-class HomeScreen extends Component {
+class NewsScreen extends Component {
 
   render() {
     return (
@@ -16,4 +16,4 @@ class HomeScreen extends Component {
   }
 }
 
-export default HomeScreen;
+export default NewsScreen;
